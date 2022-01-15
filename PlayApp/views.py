@@ -31,3 +31,10 @@ def publicaciones(request):
     documento = plantilla.render()
 
     return HttpResponse(documento)
+
+def sobre_nosotros(request):
+    plantilla = loader.get_template("PlayApp/T05-sobre_nosotros.html")
+
+    documento = plantilla.render()
+
+    return HttpResponse(documento)
