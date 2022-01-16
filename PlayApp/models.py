@@ -5,9 +5,9 @@ from django.db import models
 
 class Usuario(models.Model):
     nombre = models.CharField(max_length=40)
-    mail = models.EmailField(max_length=254)
+    email = models.EmailField(max_length=254)
     clave = models.CharField(max_length=12)
-    tipo = models.CharField(max_length=6)
+    tipo = models.CharField(max_length=6, default="")
     #ver posibilidad de usar lista
 
 class Publicacion(models.Model):
