@@ -12,7 +12,7 @@ class Usuario(models.Model):
 
 class Publicacion(models.Model):
     titulo = models.CharField(max_length=50)
-    nombre = models.EmailField(max_length=40)
+    nombre = models.CharField(max_length=40)
     noticia = models.TextField(max_length=5000)
     fecha = models.DateTimeField(auto_now=True, auto_now_add=False, max_length=12)
 
