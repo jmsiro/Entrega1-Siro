@@ -1,0 +1,17 @@
+{% extends "PlayApp/T01-view.html" %}
+{% load static %}
+{% block ContenidoTemplate %}
+<body>
+
+
+    <form method="POST">{% csrf_token %}
+        <table>
+            {{ formulario_c.as_table }}
+        </table>
+        <input type="submit" value="Crear Comentario" />
+    </form>
+
+
+    
+</body>
+{% endblock %}

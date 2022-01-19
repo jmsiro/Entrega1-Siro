@@ -13,3 +13,9 @@ class PublicacionesForm(forms.Form):
     nombre = forms.CharField()
     noticia = forms.CharField(widget=forms.Textarea())
     fecha = forms.DateField(initial=datetime.now(), show_hidden_initial=True)
+
+class ComentariosForm(forms.Form):
+    nombre = forms.CharField()
+    comentario = forms.CharField(widget=forms.Textarea())
+    fecha = forms.DateTimeField(initial=datetime.now(), show_hidden_initial=True)
+    publicacion = forms.IntegerField()
